@@ -1,0 +1,174 @@
+html {
+    font-family: "Times New Roman", Times, serif;
+}
+
+#bg1 {
+    background-color: #7B6CF6;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main {
+    min-width: 400px;
+}
+
+#namy {
+    text-align: center;
+}
+
+#weby {
+    margin-left: 770px;
+    margin-right: 700px;
+}
+
+p {
+    color: black;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+h1 {
+    color: #E5A5FF;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 200px;
+    margin-right: 250px;
+}
+
+span {
+    color: #000000;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+nav {
+    margin-right: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+hatdog {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 200px;
+    margin-right: 250px;
+}
+
+footer {
+    margin-top: 200px;
+    margin-bottom: 300px;
+    margin-left: 200px;
+    margin-right: 250px;
+}
+
+#profile {
+    margin-left: 500px;
+}
+
+#aboutme {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+#bio1 {
+    text-align: center;
+    font-size: 25px;
+}
+
+#bgabout {
+    background-color: #7B6CF6;
+}
+
+#myprofile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 500px;
+}
+
+#mylocation {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 600px;
+}
+
+#bgcontact {
+    background-color: #7B6CF6;
+}
+
+#bggrades {
+    background-color: #198754;
+}
+
+#indexgrades {
+    margin-right: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(30, 196, 154);
+}
+
+#aboutgrades {
+    margin-right: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(30, 196, 154);
+}
+
+#contactgrades {
+    margin-right: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(30, 196, 154);
+}
+
+#gradesgrades {
+    margin-right: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(30, 196, 154);
+}
+
+#grades{
+    color: #000000;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#semester{
+    color: #000000;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#degree{
+    color: #000000;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#gradetable{
+    width: 200px;
+    height: 200px;
+}
