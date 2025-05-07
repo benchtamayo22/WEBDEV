@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Listahan ng Utang</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Listahan ng Utang</h1>
+    
+        <label for="name">Pangalan</label>
+        <input type="text" id="name" placeholder="Juan Dela Cruz">
+    
+        <label for="utang">Halaga ng Utang (₱)</label>
+        <input type="number" id="utang" placeholder="1000.00">
+    
+        <button onclick="addUtang()">Isave</button>
+    
+        <ul id="nakautangs"></ul>
+      </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
