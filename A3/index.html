@@ -1,98 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dashboard</title>
-  <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-  <div class="dashboard">
-    <aside class="sidebar">
-      <h2 class="logo">Lorma Colleges</h2>
-      <nav>
-        <a href="#">Dashboard</a>
-        <a href="#">Product</a>
-        <a href="#" class="active">Customers</a>
-        <a href="#">Income</a>
-        <a href="#">Promote</a>
-        <a href="#">Help</a>
-      </nav>
-      <div class="user">
-        <img src="https://via.placeholder.com/40" alt="user">
-        <span>Evano<br><small>Project Manager</small></span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Dash</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <aside>
+      <div class="top">
+        <div class="brand">
+          <img src="logo.jpg" alt="logo" />
+          <span>Lorma Colleges</span>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Dashboard <span class="arrow">></span></a></li>
+            <li><a href="#">Product <span class="arrow">></span></a></li>
+            <li><a href="#">Customers <span class="arrow">></span></a></li>
+            <li><a href="#">Income <span class="arrow">></span></a></li>
+            <li><a href="#">Promote <span class="arrow">></span></a></li>
+            <li><a href="#">Help <span class="arrow">></span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="user-profile">
+        <div class="user-info">
+          <h1>Evano</h1>
+          <span>Project Manager</span>
+        </div>
       </div>
     </aside>
-    <main class="main">
-      <header>
-        <h1>Hello Evano 👋</h1>
-        <input type="text" placeholder="Search..." />
-      </header>
-
-      <section class="stats">
-        <div class="card">
-          <h3>Total Customers</h3>
-          <p>5,423</p>
-          <span class="increase">↑ 16% this month</span>
-        </div>
-        <div class="card">
-          <h3>Members</h3>
-          <p>1,893</p>
-          <span class="decrease">↓ 1% this month</span>
-        </div>
-        <div class="card">
-          <h3>Active Now</h3>
-          <p>189</p>
-          <div class="avatars">
-            <img src="https://via.placeholder.com/20" alt="">
-            <img src="https://via.placeholder.com/20" alt="">
-          </div>
-        </div>
-      </section>
-
-      <section class="table-section">
-        <h2>All Customers</h2>
-        <input type="text" placeholder="Search..." class="table-search"/>
-        <table>
-          <thead>
-            <tr>
-              <th>Customer Name</th>
-              <th>Company</th>
-              <th>Phone Number</th>
-              <th>Email</th>
-              <th>Country</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Jane Cooper</td><td>Microsoft</td><td>(225) 555-0118</td><td>jane@microsoft.com</td><td>United States</td><td><span class="status active">Active</span></td>
-            </tr>
-            <tr>
-              <td>Floyd Miles</td><td>Yahoo</td><td>(205) 555-0100</td><td>floyd@yahoo.com</td><td>Kiribati</td><td><span class="status inactive">Inactive</span></td>
-            </tr>
-            <tr>
-              <td>Ronald Richards</td><td>Adobe</td><td>(302) 555-0107</td><td>ronald@adobe.com</td><td>Israel</td><td><span class="status inactive">Inactive</span></td>
-            </tr>
-            <tr>
-              <td>Marvin McKinney</td><td>Tesla</td><td>(252) 555-0126</td><td>marvin@tesla.com</td><td>Iran</td><td><span class="status active">Active</span></td>
-            </tr>
-            <tr>
-              <td>Jerome Bell</td><td>Google</td><td>(629) 555-0129</td><td>jerome@google.com</td><td>Réunion</td><td><span class="status active">Active</span></td>
-            </tr>
-            <tr>
-              <td>Kathryn Murphy</td><td>Microsoft</td><td>(406) 555-0120</td><td>kathryn@microsoft.com</td><td>Curaçao</td><td><span class="status active">Active</span></td>
-            </tr>
-            <tr>
-              <td>Jacob Jones</td><td>Yahoo</td><td>(208) 555-0112</td><td>jacob@yahoo.com</td><td>Brazil</td><td><span class="status active">Active</span></td>
-            </tr>
-            <tr>
-              <td>Kristin Watson</td><td>Facebook</td><td>(704) 555-0127</td><td>kristin@facebook.com</td><td>Åland Islands</td><td><span class="status inactive">Inactive</span></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-    </main>
-  </div>
-</body>
+  </body>
 </html>
