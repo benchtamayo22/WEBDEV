@@ -1,156 +1,125 @@
-* {
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@400;600;700;900&display=swap');
+*{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
-  }
-  
-  body {
-    background: #f8f9fb;
-  }
-  
-  .dashboard {
-    display: flex;
-    min-height: 100vh;
-  }
-  
-  .sidebar {
-    width: 240px;
-    background-color: #fff;
-    padding: 2rem 1rem;
+
+}
+:root{
+    --primary: #ffffff;
+    --secondary: #000000;
+    --tertiary: #FAFBFF;
+    --accent: #5932EA;
+    --font: "Poppins", sans-serif;
+}
+
+body{
+    font-family: var(--font);
+    display: grid;
+    grid-template-columns: 306px 1fr;
+    grid-template-areas: "sidebar main";
+    height: 100vh;
+    width: 100vw;
+    transition: all .3s ease;
+}
+
+aside{
+    /* grid-column: 1 / 2; */
+    grid-area: sidebar;
+    background-color: var(--primary);
+    padding: 36px 28px 78px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-right: 1px solid #e0e0e0;
-  }
-  
-  .logo {
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 2rem;
-  }
-  
-  .sidebar nav a {
-    display: block;
-    padding: 1rem;
-    color: #555;
+}
+
+
+
+.brand{
+    margin-bottom: 64px;
+    display:flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.brand span{
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.brand img{
+    width: 37px;
+    height: auto;
+}
+.menu > ul{
+    list-style-type: none;
+
+}
+
+.menu > ul a{
     text-decoration: none;
-    margin-bottom: 0.5rem;
-    border-radius: 8px;
-  }
-  
-  .sidebar nav a.active,
-  .sidebar nav a:hover {
-    background-color: #5d5fef;
-    color: #fff;
-  }
-  
-  .user {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-  
-  .user img {
-    border-radius: 50%;
-  }
-  
-  .main {
-    flex: 1;
-    padding: 2rem;
-  }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  header input {
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-  }
-  
-  .stats {
-    display: flex;
-    gap: 1rem;
-    margin: 2rem 0;
-  }
-  
-  .card {
-    flex: 1;
-    background: #fff;
-    padding: 1rem;
-    border-radius: 12px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  }
-  
-  .card h3 {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .card p {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .increase {
-    color: green;
-  }
-  
-  .decrease {
-    color: red;
-  }
-  
-  .avatars img {
-    border-radius: 50%;
-    margin-right: 4px;
-  }
-  
-  .table-section {
-    background: #fff;
-    padding: 1rem;
-    border-radius: 12px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  }
-  
-  .table-search {
-    float: right;
-    margin-bottom: 1rem;
-    padding: 0.4rem 0.8rem;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem;
-  }
-  
-  th, td {
-    text-align: left;
-    padding: 0.8rem;
-    border-bottom: 1px solid #eee;
-  }
-  
-  .status {
-    padding: 0.3rem 0.6rem;
-    border-radius: 12px;
-    font-size: 0.85rem;
-    text-align: center;
-  }
-  
-  .status.active {
-    background-color: #d1f5e4;
-    color: #2f855a;
-  }
-  
-  .status.inactive {
-    background-color: #ffe0e0;
-    color: #c53030;
-  }
-  
+    color: var(--secondary);
+}
+
+main{
+    /* grid-column: 2 / 3; */
+    grid-area: main;
+    background-color: var(--tertiary);
+}
+
+.menu > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu > ul li {
+  transition: all 0.3s ease;
+}
+
+.menu > ul li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+  height: 46px;
+  padding: 0 16px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #9197B3;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.menu > ul li a:hover {
+  background-color: var(--accent);
+  color: #ffffff;
+}
+
+.menu > ul li a:hover .arrow {
+  color: #ffffff;
+}
+
+.menu > ul li.active a {
+  background-color: var(--accent);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.arrow {
+  font-size: 16px;
+  color: #9197B3;
+  transition: color 0.3s ease;
+}
+
+
+
+@media(max-width: 48em){
+    body{
+        grid-template-columns: 102px 1fr;
+    }
+}
